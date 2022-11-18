@@ -1,0 +1,7 @@
+.btn-icon {
+  @apply flex justify-center items-center py-4 bg-light-black rounded-md border-2;
+}
+
+.btn-icon:hover {
+  @apply cursor-pointer bg-reddish-black border-2 border-primary;
+}

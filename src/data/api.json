@@ -1,0 +1,52 @@
+{
+    "hamburger": [
+        {
+            "id": "01",
+            "image": "https://res.cloudinary.com/makiro322/image/upload/v1661442974/Screenshot_2022_08_23_at_12_15_38_LAS_10_MEJORES_HAMBURGUESAS_EN_LIMA_31eec92428.png",
+            "name": "Black Burger",
+            "description": "Pan al vapor con tinta de calamar, hamburguesa de entraña Angus, queso cheddar, kimchi y encurtido de kyuri.",
+            "items": 11,
+            "price": 5.99
+        },
+        {
+            "id": "02",
+            "image": "https://res.cloudinary.com/makiro322/image/upload/v1661443170/17554038_724924751016746_9112874676500075052_n_568e5f104e.jpg",
+            "name": "La Benedictina",
+            "description": "Pura carne Angus  con huevo frito, salsa Benedict, queso cheddar, tocino, tomate y lechuga.",
+            "items": 12,
+            "price": 7.99
+        },
+        {
+            "id": "03",
+            "image": "https://res.cloudinary.com/makiro322/image/upload/v1661443256/Screenshot_2022_08_25_at_11_00_16_LAS_10_MEJORES_HAMBURGUESAS_EN_LIMA_41302ed261.png",
+            "name": "Burger Italiano",
+            "description": "Carne de res Angus, tomates, arúgula, queso gorgonzola, cebolla confitada.",
+            "items": 9,
+            "price": 12.59
+        },
+        {
+            "id": "04",
+            "image": "https://res.cloudinary.com/makiro322/image/upload/v1661443347/Screenshot_2022_08_25_at_11_02_01_LAS_10_MEJORES_HAMBURGUESAS_EN_LIMA_828520df3d.png",
+            "name": "Triple Bacon Stackhouse",
+            "description": "Hamburguesa a la parrilla gratinada con queso Cheddar y acompañada de tres tipos de tozino: reducción de vinagre balsámico y tocino, tiras de tocino a la pimienta y trocitos de tocino crocante.",
+            "items": 15,
+            "price": 18.99
+        },
+        {
+            "id": "05",
+            "image": "https://res.cloudinary.com/makiro322/image/upload/v1661443439/Screenshot_2022_08_25_at_11_03_42_LAS_10_MEJORES_HAMBURGUESAS_EN_LIMA_5e00686f53.png",
+            "name": "Surf and Turf Burguer",
+            "description": "Hamburguesa de carne Americana acompañada de langostino jumbo, champiñones, tocino y queso crema.",
+            "items": 10,
+            "price": 25.40
+        },
+        {
+            "id": "06",
+            "image": "https://res.cloudinary.com/makiro322/image/upload/v1661445115/Screenshot_2022_08_25_at_11_31_20_LAS_10_MEJORES_HAMBURGUESAS_EN_LIMA_e6c0ad8275.png",
+            "name": "Germa-Ny-Burger",
+            "description": "Hamburguesa, chorizo, pickles queso gouda, tomate, chimichurri.",
+            "items": 10,
+            "price": 17.99
+        }
+    ]
+}

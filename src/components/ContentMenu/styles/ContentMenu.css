@@ -1,0 +1,16 @@
+.content-menu {
+  @apply basis-[90%] bg-black-cuztse m-5 p-5 rounded-lg flex justify-between;
+}
+
+.content-menu__left {
+  @apply basis-[80%];
+}
+
+.content-menu__right {
+  @apply basis-[20%];
+}
+
+.content-menu__left h1,
+.content-menu__right h2 {
+  @apply text-2xl;
+}
