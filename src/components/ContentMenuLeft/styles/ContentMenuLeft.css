@@ -1,0 +1,58 @@
+.content-menu__left {
+  @apply basis-[75%] flex-nowrap;
+}
+
+.head-m-left {
+  @apply flex mb-[15px];
+}
+
+.nav-m-left {
+  @apply flex justify-between;
+}
+
+@screen smobile {
+  .content-menu__left {
+    @apply basis-[100%];
+  }
+  .nav-m-left {
+    @apply grid grid-cols-2 gap-2 justify-items-center;
+  }
+  .nav-m-left > a {
+    @apply w-full;
+  }
+  .head-m-left {
+    @apply flex-wrap space-y-2;
+  }
+  .head-m-left > div {
+    @apply basis-full;
+  }
+  .head-m-left > input {
+    @apply py-5 basis-full;
+  }
+}
+
+@screen md {
+  .content-menu__left {
+    @apply basis-[100%];
+  }
+  .head-m-left {
+  }
+}
+
+@screen lg {
+  .content-menu__left {
+    @apply basis-[100%];
+  }
+}
+
+@screen xl {
+  .content-menu__left {
+    @apply basis-[75%];
+  }
+}
+
+@screen 2xl {
+  .content-menu__left {
+    @apply basis-[75%];
+  }
+}

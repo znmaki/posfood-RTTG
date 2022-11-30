@@ -1,0 +1,39 @@
+.list-products {
+    @apply mt-5 grid grid-cols-1 gap-4
+}
+
+@screen smobile {
+  .list-products {
+    @apply grid-cols-1;
+  }
+}
+
+@screen sm {
+  .list-products {
+    @apply grid-cols-2;
+  }
+}
+
+@screen md {
+  .list-products {
+    @apply grid-cols-3;
+  }
+}
+
+@screen lg {
+  .list-products {
+    @apply grid-cols-3;
+  }
+}
+
+@screen xl {
+  .list-products {
+    @apply grid-cols-4;
+  }
+}
+
+@screen 2xl {
+  .list-products {
+    @apply grid-cols-4;
+  }
+}

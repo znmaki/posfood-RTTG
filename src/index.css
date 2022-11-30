@@ -5,9 +5,5 @@
 @layer base {
   body {
     @apply bg-light-black text-white;
-  }
-
-  .btn-disabled:disabled, .btn-disabled[disabled]{
-    @apply text-primary
-  }
+  }  
 }

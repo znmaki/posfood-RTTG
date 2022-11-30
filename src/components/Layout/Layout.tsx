@@ -1,14 +1,33 @@
-import { ContentMenu } from '../ContentMenu';
-import { Header } from '../Header';
+import { createContext, useState } from 'react';
+import { Outlet } from 'react-router-dom';
+
+import { Header } from '@/components';
+
 import './styles/Layout.css';
-export interface LayoutInterface { }
+
+import { ElementsContextProps } from '@/models';
+
+export const ElementContext = createContext({} as ElementsContextProps)
+const { Provider } = ElementContext;
 
 const Layout = () => {
+  const [hidden, setHidden] = useState(false)
+
+  const changeIdenti = () => {
+    setHidden(!hidden)
+  }
+
   return (
-    <div className='flex'>
-      <Header />
-      <ContentMenu />
-    </div>
+    <Provider value={{
+      changeIdenti,
+      hidden
+    }}>
+      <div className='flex'>
+        <Header />
+
+        <Outlet />
+      </div>
+    </Provider>
   )
 }
 

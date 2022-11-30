@@ -1,16 +1,36 @@
 .content-menu {
-  @apply basis-[90%] bg-black-cuztse m-5 p-5 rounded-lg flex justify-between;
-}
-
-.content-menu__left {
-  @apply basis-[80%];
-}
-
-.content-menu__right {
-  @apply basis-[20%];
+  @apply basis-[90%] bg-black-cuztse mr-5 my-[10px] px-5 py-[15px] rounded-lg flex justify-between space-x-12;
 }
 
 .content-menu__left h1,
 .content-menu__right h2 {
   @apply text-2xl;
+}
+
+@screen smobile {
+  .content-menu {
+    @apply flex-wrap basis-[100%] mr-0 my-0 rounded-none space-x-0;
+    /* bg-fuchsia-900 */
+  }
+}
+
+@screen md {
+  .content-menu {
+    @apply flex-wrap basis-[100%] mr-0 my-0 rounded-none space-x-0;
+    /* bg-fuchsia-300 */
+  }
+}
+
+@screen lg {
+  .content-menu {
+    @apply flex-wrap space-x-0;
+    /* bg-blue-500 */
+  }
+}
+
+@screen xl {
+  .content-menu {
+    @apply bg-black-cuztse;
+    /* bg-red-300 */
+  }
 }

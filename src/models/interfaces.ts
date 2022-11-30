@@ -7,9 +7,14 @@ export interface IProduct {
     price: number;
 }
 
-export interface CardMenuProps {
+export interface ContentMenuProps {
     children?: React.ReactElement | React.ReactElement[];
-    product: IProduct
+}
+
+export interface CardProductProps {
+    children?: React.ReactElement | React.ReactElement[];
+    product: IProduct;
+    onChange?: (args: onChangeArg) => void
 }
 
 export interface ProductContextProps {
@@ -18,18 +23,23 @@ export interface ProductContextProps {
     product: IProduct;
 }
 
-export interface IProductCart {
-    id: string;
-    image: string;
-    name: string;
-    description: string;
-    items: number;
-    price: number;
-    amountP?: number;
+export interface ElementsContextProps {
+    changeIdenti: () => void;
+    hidden: boolean;
 }
 
-export interface BtnPruebaProps {
-    productBtn: IProductCart;
-    setCarrito: React.Dispatch<React.SetStateAction<IProductCart[] | undefined>>;
-    carrito: IProductCart[] | undefined
+export interface onChangeArg {
+    product: IProduct;
+    amount: number;
+}
+
+export interface ProductInCart extends IProduct {
+    amount: number
+}
+
+export interface onProductChangeProps {
+    onProductChange: ({ amount, product }: {
+        amount: number;
+        product: IProduct;
+    }) => void
 }

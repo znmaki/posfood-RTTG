@@ -1,0 +1,40 @@
+.content-menu__right {
+  @apply basis-[25%] flex flex-col justify-between;
+}
+
+.resumen-cart {
+  @apply bg-light-black px-5 py-7 rounded-lg;
+}
+
+.hr-style {
+  border-bottom: 3px dashed #6a6b71;
+  height: 1px;
+}
+
+.btn-print {
+  @apply flex items-center justify-center mt-[2rem] w-full text-center bg-primary py-4 rounded-lg font-semibold space-x-5;
+}
+
+@screen smobile {
+  .content-menu__right {
+    @apply basis-[100%] space-y-5;
+  }
+}
+
+@screen md {
+  .content-menu__right {
+    @apply basis-[100%] space-y-5;
+  }
+}
+
+@screen lg {
+  .content-menu__right {
+    @apply basis-[100%] space-y-5;
+  }
+}
+
+@screen xl {
+  .content-menu__right {
+    @apply basis-[25%];
+  }
+}
