@@ -28,7 +28,7 @@ const Header = () => {
 
   const onMouseEnterHandler = ({ currentTarget }: any) => {
     gsap.to(currentTarget, {
-      scale: .05,
+      scale: 1.05,
       duration: .5,
     })
   };
