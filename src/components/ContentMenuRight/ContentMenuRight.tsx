@@ -6,10 +6,26 @@ import { ButtomIconText } from '@/components';
 import { IconPrint } from '@/components';
 
 import './styles/ContentMenuRight.css';
+import gsap from 'gsap';
+import { useLayoutEffect } from 'react';
 
 export interface ContentMenuRightInterface { }
 
 const ContentMenuRight = ({ carrito }: { [key: string]: ProductInCart | {} }) => {
+
+  const onMouseEnterHandler = ({ currentTarget }: any) => {
+    gsap.to(currentTarget, {
+      scale: 1.05,
+      duration: .5,
+    })
+  };
+
+  const onMouseLeaveHandler = ({ currentTarget }: any) => {
+    gsap.to(currentTarget, {
+      scale: 1,
+      duration: .5,
+    })
+  };
 
   return (
     <div className='content-menu__right '>
@@ -35,7 +51,7 @@ const ContentMenuRight = ({ carrito }: { [key: string]: ProductInCart | {} }) =>
             <p className='self-end'>$ {getTotal(carrito)}</p>
           </div>
         </div>
-        <ButtomIconText text='Generate Ticket' icon={<IconPrint />} style='btn-print' />
+        <div onMouseEnter={onMouseEnterHandler} onMouseLeave={onMouseLeaveHandler}><ButtomIconText text='Generate Ticket' icon={<IconPrint />} style='btn-print btn-animation' /></div>
       </div>
     </div>
   )

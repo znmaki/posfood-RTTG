@@ -24,8 +24,10 @@ export interface ProductContextProps {
 }
 
 export interface ElementsContextProps {
-    changeIdenti: () => void;
     hidden: boolean;
+    header: null;
+    setHeaderElem: (element: any) => void
+    changeIdenti: () => void;
 }
 
 export interface onChangeArg {

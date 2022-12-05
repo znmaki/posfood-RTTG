@@ -12,15 +12,23 @@ const { Provider } = ElementContext;
 
 const Layout = () => {
   const [hidden, setHidden] = useState(false)
+  const [header, setHeader] = useState(null)
 
   const changeIdenti = () => {
     setHidden(!hidden)
   }
 
+  const setHeaderElem = (element: any) => {
+    setHeader(element)
+  }
+
   return (
     <Provider value={{
-      changeIdenti,
-      hidden
+      hidden,
+      header,
+
+      setHeaderElem,
+      changeIdenti
     }}>
       <div className='flex'>
         <Header />

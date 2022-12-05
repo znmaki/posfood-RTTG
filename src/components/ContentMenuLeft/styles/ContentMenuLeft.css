@@ -29,6 +29,9 @@
   .head-m-left > input {
     @apply py-5 basis-full;
   }
+  .collapse{
+    @apply block
+  }
 }
 
 @screen md {
@@ -37,11 +40,17 @@
   }
   .head-m-left {
   }
+  .btn-collapse{
+    @apply block
+  }
 }
 
 @screen lg {
   .content-menu__left {
     @apply basis-[100%];
+  }
+  .btn-collapse{
+    @apply hidden
   }
 }
 
@@ -49,10 +58,16 @@
   .content-menu__left {
     @apply basis-[75%];
   }
+  .btn-collapse{
+    @apply hidden
+  }
 }
 
 @screen 2xl {
   .content-menu__left {
     @apply basis-[75%];
+  }
+  .btn-collapse{
+    @apply hidden
   }
 }
